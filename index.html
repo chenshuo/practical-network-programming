@@ -1,154 +1,98 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Practical Network Programming Companion Site">
-
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>Practical Network Programming Companion Site</title>
   </head>
 
   <body>
-
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-
           <h1 id="project_title">Practical Network Programming</h1>
           <h2 id="project_tagline">Companion site of <a href="http://boolan.com/course/4">Shuo Chen's course</a> at <a href="http://boolan.com">boolan.com</a></h2>
-
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a id="course-description" class="anchor" href="#course-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course Description</h1>
 
+<h1>Course Description</h1>
 <ul>
 <li>Teach common network programming techniques by examples</li>
 <li>Focus on server-side TCP network programming on Linux</li>
 <li>Walk-through code in C++, Python and Go</li>
 </ul>
-
-<h1>
-<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h1>
-
+<h1>Prerequisites</h1>
 <ul>
 <li>Have read <em>Unix Network Programming</em> volume 1 (either 2nd ed. or 3rd ed.) by late W. Richard Stevens</li>
 <li>Know basics of TCP/IP, eg. IP addresses, ports,</li>
 <li>Know how to write an echo server with basic sockets APIs in any language</li>
 </ul>
-
-<h1>
-<a id="schedule" class="anchor" href="#schedule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schedule</h1>
-
+<h1>Schedule</h1>
 <h3>0. Overview</h3>
-
-<a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
+<p><a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
 <a href="http://boolan.com/lecture/1000001029">Lecture section 2</a> |
-<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a>
-
-<h2>
-<a id="part-i-basic-non-concurrent-programs-with-blocking-io" class="anchor" href="#part-i-basic-non-concurrent-programs-with-blocking-io" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part I: Basic non-concurrent programs with blocking IO</h2>
-
-<h3>
-<a id="1-ttcp" class="anchor" href="#1-ttcp" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. TTCP</h3>
-
+<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a></p>
+<h2>Part I: Basic non-concurrent programs with blocking IO</h2>
+<h3>1. TTCP</h3>
 <ul>
 <li>Review basic Sockets API</li>
 <li>Measure throughput of TCP over Gigabit Ethernet</li>
 </ul>
-
-<h3>
-<a id="2-round-trip" class="anchor" href="#2-round-trip" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. Round-trip</h3>
-
+<h3>2. Round-trip</h3>
 <ul>
 <li>The only UDP example</li>
 <li>Measure clock error between two hosts</li>
 </ul>
-
-<h3>
-<a id="3-netcat" class="anchor" href="#3-netcat" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Netcat</h3>
-
+<h3>3. Netcat</h3>
 <ul>
 <li>The Swiss army knife of networking</li>
 <li>Deal with two file descriptors simultaneously (stdin/out and TCP socket)</li>
 </ul>
-
-<h3>
-<a id="4-slow-sinksource" class="anchor" href="#4-slow-sinksource" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. Slow sink/source</h3>
-
+<h3>4. Slow sink/source</h3>
 <ul>
 <li>Simulate low-bandwidth or slow peer</li>
 <li>Generate traffic generator at given speed</li>
 </ul>
-
-<h2>
-<a id="part-ii-concurrent-programs-with-non-blocking-io" class="anchor" href="#part-ii-concurrent-programs-with-non-blocking-io" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part II: Concurrent programs with non-blocking IO</h2>
-
-<h3>
-<a id="5-socks-proxy-server" class="anchor" href="#5-socks-proxy-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. SOCKS proxy server</h3>
-
+<h2>Part II: Concurrent programs with non-blocking IO</h2>
+<h3>5. SOCKS proxy server</h3>
 <ul>
 <li>Relay two TCP connections</li>
 <li>Mismatching bandwidth?</li>
 <li>Difference between level 4 and level 7?</li>
 </ul>
-
-<h3>
-<a id="6-sudoku-solver" class="anchor" href="#6-sudoku-solver" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. Sudoku Solver</h3>
-
+<h3>6. Sudoku Solver</h3>
 <ul>
 <li>Request-response model</li>
 <li>Client connections are independent</li>
 <li>Concurrency and parallel on multicore machines</li>
 </ul>
-
-<h3>
-<a id="7-simple-memcached" class="anchor" href="#7-simple-memcached" aria-hidden="true"><span class="octicon octicon-link"></span></a>7. Simple memcached</h3>
-
+<h3>7. Simple memcached</h3>
 <ul>
 <li>Clients share the same state of the server</li>
 <li>Efficient locking by sharding</li>
 </ul>
-
-<h3>
-<a id="8-broadcasting-to-tcp-peers" class="anchor" href="#8-broadcasting-to-tcp-peers" aria-hidden="true"><span class="octicon octicon-link"></span></a>8. Broadcasting to TCP peers</h3>
-
+<h3>8. Broadcasting to TCP peers</h3>
 <ul>
 <li>Connections exchange data with each other</li>
 <li>How to deal with slow clients?</li>
 </ul>
-
-<h3>
-<a id="9-rpc-load-balancer" class="anchor" href="#9-rpc-load-balancer" aria-hidden="true"><span class="octicon octicon-link"></span></a>9. RPC load balancer</h3>
-
+<h3>9. RPC load balancer</h3>
 <ul>
 <li>Better than round-robin</li>
 </ul>
+<h2>Part III: Data processing with multiple machines</h2>
+<h3>10. Parallel N-queue</h3>
+<h3>11. Median across machines</h3>
+<h3>12. Most frequent queries</h3>
+<h3>13. Distributed sorting</h3>
+<h2>Part IV: Capacity provisioning, latency managing, etc.</h2>
 
-<h2>
-<a id="part-iii-data-processing-with-multiple-machines" class="anchor" href="#part-iii-data-processing-with-multiple-machines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part III: Data processing with multiple machines</h2>
-
-<h3>
-<a id="10-parallel-n-queue" class="anchor" href="#10-parallel-n-queue" aria-hidden="true"><span class="octicon octicon-link"></span></a>10. Parallel N-queue</h3>
-
-<h3>
-<a id="11-median-across-machines" class="anchor" href="#11-median-across-machines" aria-hidden="true"><span class="octicon octicon-link"></span></a>11. Median across machines</h3>
-
-<h3>
-<a id="12-most-frequent-queries" class="anchor" href="#12-most-frequent-queries" aria-hidden="true"><span class="octicon octicon-link"></span></a>12. Most frequent queries</h3>
-
-<h3>
-<a id="13-distributed-sorting" class="anchor" href="#13-distributed-sorting" aria-hidden="true"><span class="octicon octicon-link"></span></a>13. Distributed sorting</h3>
-
-<h2>
-<a id="part-iv-capacity-provisioning-latency-managing-etc" class="anchor" href="#part-iv-capacity-provisioning-latency-managing-etc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part IV: Capacity provisioning, latency managing, etc.</h2>
       </section>
     </div>
 
