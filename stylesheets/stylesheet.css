@@ -60,25 +60,25 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
-  font-weight: 700;
+  /* font-weight: 700; */
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 2em;
 }
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 1.7em;
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.3em;
+  font-weight: 700;
 }
 
 h4 {
@@ -264,7 +264,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 680px;
+  max-width: 640px;
   padding: 20px 10px;
   margin: 0 auto;
 }
