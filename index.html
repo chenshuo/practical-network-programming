@@ -29,68 +29,81 @@
 </ul>
 <h1>Prerequisites</h1>
 <ul>
-<li>Have read <em>Unix Network Programming</em> volume 1 (either 2nd ed. or 3rd ed.) by late W.&nbsp;Richard Stevens</li>
+<li>Have read <em>Unix Network Programming</em> volume 1 (either 2nd ed. or 3rd ed.) by late W. Richard Stevens</li>
 <li>Know basics of TCP/IP, eg. IP addresses, ports,</li>
 <li>Know how to write an echo server with basic sockets APIs in any language</li>
 </ul>
 <h1>Schedule</h1>
 <h3>0. Overview</h3>
-<p><a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
+<ul>
+<li>Measure throughput of TCP over Gigabit Ethernet with netcat</li>
+<li><a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
 <a href="http://boolan.com/lecture/1000001029">Lecture section 2</a> |
-<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a></p>
+<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a></li>
+</ul>
 <h2>Part I: Basic non-concurrent programs with blocking IO</h2>
 <h3>1. TTCP</h3>
 <ul>
 <li>Review basic Sockets API</li>
-<li>Measure throughput of TCP over Gigabit Ethernet</li>
+<li>Measure throughput of TCP over Gigabit Ethernet with TTCP</li>
+<li><a href="http://boolan.com/lecture/1000001031">Lecture section 1</a> |
+<a href="http://boolan.com/lecture/1000001053">Lecture section 2</a> |
+<a href="http://boolan.com/lecture/1000001054">Lecture section 3</a> | more</li>
 </ul>
 <h3>2. Round-trip</h3>
 <ul>
-<li>The only UDP example</li>
+<li>How NTP works</li>
 <li>Measure clock error between two hosts</li>
+<li>The only UDP example</li>
 </ul>
 <h3>3. Netcat</h3>
 <ul>
 <li>The Swiss army knife of networking</li>
 <li>Deal with two file descriptors simultaneously (stdin/out and TCP socket)</li>
+<li>Why IO-multiplexing must be used with non-blocking IO</li>
 </ul>
 <h3>4. Slow sink/source</h3>
 <ul>
 <li>Simulate low-bandwidth or slow peer</li>
-<li>Generate traffic generator at given speed</li>
+<li>Generate traffic at given speed</li>
+<li>Throttling</li>
+</ul>
+<h3>5. procmon</h3>
+<ul>
+<li>cpu / memory usage charts of one process</li>
 </ul>
 <h2>Part II: Concurrent programs with non-blocking IO</h2>
-<h3>5. SOCKS proxy server</h3>
-<ul>
-<li>Relay two TCP connections</li>
-<li>Mismatching bandwidth?</li>
-<li>Difference between level 4 and level 7?</li>
-</ul>
-<h3>6. Sudoku Solver</h3>
+<h3>10. Sudoku Solver</h3>
 <ul>
 <li>Request-response model</li>
 <li>Client connections are independent</li>
 <li>Concurrency and parallel on multicore machines</li>
 </ul>
-<h3>7. Simple memcached</h3>
+<h3>11. SOCKS proxy server</h3>
+<ul>
+<li>Relay two TCP connections</li>
+<li>Mismatching bandwidth?</li>
+<li>Difference between level 4 and level 7?</li>
+</ul>
+<h3>12. Simple memcached</h3>
 <ul>
 <li>Clients share the same state of the server</li>
 <li>Efficient locking by sharding</li>
 </ul>
-<h3>8. Broadcasting to TCP peers</h3>
+<h3>13. Broadcasting to TCP peers</h3>
 <ul>
 <li>Connections exchange data with each other</li>
 <li>How to deal with slow clients?</li>
 </ul>
-<h3>9. RPC load balancer</h3>
+<h3>14. RPC load balancer</h3>
 <ul>
 <li>Better than round-robin</li>
 </ul>
 <h2>Part III: Data processing with multiple machines</h2>
-<h3>10. Parallel N-queue</h3>
-<h3>11. Median across machines</h3>
-<h3>12. Most frequent queries</h3>
-<h3>13. Distributed sorting</h3>
+<h3>20. Parallel N-queen</h3>
+<h3>21. Median across machines</h3>
+<h3>22. Most frequent queries</h3>
+<h3>23. Distributed sorting</h3>
 <h2>Part IV: Capacity provisioning, latency managing, etc.</h2>
 
       </section>
