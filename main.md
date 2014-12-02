@@ -3,7 +3,7 @@
 * Focus on server-side TCP network programming on Linux
 * Walk-through code in C++, Python and Go
 
-# Prerequisites 
+# Prerequisites
 * Have read _Unix Network Programming_ volume 1 (either 2nd ed. or 3rd ed.) by late W.&nbsp;Richard Stevens
 * Know basics of TCP/IP, eg. IP addresses, ports,
 * Know how to write an echo server with basic sockets APIs in any language
@@ -16,15 +16,18 @@
 <a href="http://boolan.com/lecture/1000001029">Lecture section 2</a> |
 <a href="http://boolan.com/lecture/1000001030">Lecture section 3</a>
 
+
 ## Part I: Basic non-concurrent programs with blocking IO
 
 ### 1. TTCP
 * Review basic Sockets API
 * Measure throughput of TCP over Gigabit Ethernet with TTCP
 * <a href="http://boolan.com/lecture/1000001031">Lecture section 1</a> |
-<a href="http://boolan.com/lecture/1000001053">Lecture section 2</a> |
-<a href="http://boolan.com/lecture/1000001054">Lecture section 3</a> | more
-
+<a href="http://boolan.com/lecture/1000001053">section 2</a> |
+<a href="http://boolan.com/lecture/1000001054">section 3</a> |
+<a href="http://boolan.com/lecture/1000001062">section 4</a> |
+<a href="http://boolan.com/lecture/1000001063">section 5</a> |
+<a href="http://boolan.com/lecture/1000001066">section 6</a>
 
 ### 2. Round-trip
 * How NTP works
