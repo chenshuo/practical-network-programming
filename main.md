@@ -8,6 +8,12 @@
 * Know basics of TCP/IP, eg. IP addresses, ports,
 * Know how to write an echo server with basic sockets APIs in any language
 
+# Code
+* http://github.com/chenshuo/muduo
+* http://github.com/chenshuo/recipes
+* http://github.com/chenshuo/muduo-protorpc
+* http://github.com/chenshuo/muduo-examples-in-go
+
 # Schedule
 
 ### 0. Overview
