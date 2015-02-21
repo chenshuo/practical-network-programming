@@ -45,7 +45,7 @@
 <a href="http://boolan.com/course/section/1000001104">section 4</a> |
 <a href="http://boolan.com/course/section/1000001105">section 5</a> |
 <a href="http://boolan.com/course/section/1000001106">section 6</a> |
-<a href="http://boolan.com/course/section/1000001107">section 7</a> |
+<a href="http://boolan.com/course/section/1000001107">section 7</a>
 
 ### 3. Netcat
 * The Swiss army knife of networking
@@ -57,7 +57,7 @@
 <a href="http://boolan.com/course/section/1000001121">section 4</a> |
 <a href="http://boolan.com/course/section/1000001122">section 5</a> |
 <a href="http://boolan.com/course/section/1000001123">section 6</a> |
-<a href="http://boolan.com/course/section/1000001124">section 7</a> |
+<a href="http://boolan.com/course/section/1000001124">section 7</a>
 
 ## Part II: Concurrent programs with non-blocking IO
 
