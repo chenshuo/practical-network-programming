@@ -18,9 +18,9 @@
 
 ### 0. Overview
 * Measure throughput of TCP over Gigabit Ethernet with netcat
-* <a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
-<a href="http://boolan.com/lecture/1000001029">Lecture section 2</a> |
-<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a>
+* <a href="http://boolan.com/course/section/1000001028">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001029">Lecture section 2</a> |
+<a href="http://boolan.com/course/section/1000001030">Lecture section 3</a>
 
 
 ## Part I: Basic non-concurrent programs with blocking IO
@@ -28,46 +28,62 @@
 ### 1. TTCP
 * Review basic Sockets API
 * Measure throughput of TCP over Gigabit Ethernet with TTCP
-* <a href="http://boolan.com/lecture/1000001031">Lecture section 1</a> |
-<a href="http://boolan.com/lecture/1000001053">section 2</a> |
-<a href="http://boolan.com/lecture/1000001054">section 3</a> |
-<a href="http://boolan.com/lecture/1000001062">section 4</a> |
-<a href="http://boolan.com/lecture/1000001063">section 5</a> |
-<a href="http://boolan.com/lecture/1000001066">section 6</a>
+* <a href="http://boolan.com/course/section/1000001031">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001053">section 2</a> |
+<a href="http://boolan.com/course/section/1000001054">section 3</a> |
+<a href="http://boolan.com/course/section/1000001062">section 4</a> |
+<a href="http://boolan.com/course/section/1000001063">section 5</a> |
+<a href="http://boolan.com/course/section/1000001066">section 6</a>
 
 ### 2. Round-trip
 * How NTP works
 * Measure clock error between two hosts
 * The only UDP example
+* <a href="http://boolan.com/course/section/1000001071">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001102">section 2</a> |
+<a href="http://boolan.com/course/section/1000001103">section 3</a> |
+<a href="http://boolan.com/course/section/1000001104">section 4</a> |
+<a href="http://boolan.com/course/section/1000001105">section 5</a> |
+<a href="http://boolan.com/course/section/1000001106">section 6</a> |
+<a href="http://boolan.com/course/section/1000001107">section 7</a> |
 
 ### 3. Netcat
 * The Swiss army knife of networking
 * Deal with two file descriptors simultaneously (stdin/out and TCP socket)
 * Why IO-multiplexing must be used with non-blocking IO
-
-### 4. Slow sink/source
-* Simulate low-bandwidth or slow peer
-* Generate traffic at given speed
-* Throttling
-
-### 5. procmon
-* cpu / memory usage charts of one process
+* <a href="http://boolan.com/course/section/1000001118">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001119">section 2</a> |
+<a href="http://boolan.com/course/section/1000001120">section 3</a> |
+<a href="http://boolan.com/course/section/1000001121">section 4</a> |
+<a href="http://boolan.com/course/section/1000001122">section 5</a> |
+<a href="http://boolan.com/course/section/1000001123">section 6</a> |
+<a href="http://boolan.com/course/section/1000001124">section 7</a> |
 
 ## Part II: Concurrent programs with non-blocking IO
 
-### 10. Sudoku Solver
+### 4. procmon
+* cpu / memory usage charts of one process
+* <a href="http://boolan.com/course/section/1000001146">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001147">section 2</a> |
+<a href="http://boolan.com/course/section/1000001148">section 3</a> |
+<a href="http://boolan.com/course/section/1000001149">section 4</a> |
+<a href="http://boolan.com/course/section/1000001150">section 5</a> |
+<a href="http://boolan.com/course/section/1000001151">section 6</a>
+
+### 5. Simple memcached
+* Clients share the same state of the server
+* Efficient locking by sharding
+
+### 6. Sudoku Solver
 * Request-response model
 * Client connections are independent
 * Concurrency and parallel on multicore machines
+
 
 ### 11. SOCKS proxy server
 * Relay two TCP connections
 * Mismatching bandwidth?
 * Difference between level 4 and level 7?
-
-### 12. Simple memcached
-* Clients share the same state of the server
-* Efficient locking by sharding
 
 ### 13. Broadcasting to TCP peers
 * Connections exchange data with each other

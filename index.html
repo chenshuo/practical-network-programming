@@ -44,46 +44,65 @@
 <h3>0. Overview</h3>
 <ul>
 <li>Measure throughput of TCP over Gigabit Ethernet with netcat</li>
-<li><a href="http://boolan.com/lecture/1000001028">Lecture section 1</a> |
-<a href="http://boolan.com/lecture/1000001029">Lecture section 2</a> |
-<a href="http://boolan.com/lecture/1000001030">Lecture section 3</a></li>
+<li><a href="http://boolan.com/course/section/1000001028">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001029">Lecture section 2</a> |
+<a href="http://boolan.com/course/section/1000001030">Lecture section 3</a></li>
 </ul>
 <h2>Part I: Basic non-concurrent programs with blocking IO</h2>
 <h3>1. TTCP</h3>
 <ul>
 <li>Review basic Sockets API</li>
 <li>Measure throughput of TCP over Gigabit Ethernet with TTCP</li>
-<li><a href="http://boolan.com/lecture/1000001031">Lecture section 1</a> |
-<a href="http://boolan.com/lecture/1000001053">section 2</a> |
-<a href="http://boolan.com/lecture/1000001054">section 3</a> |
-<a href="http://boolan.com/lecture/1000001062">section 4</a> |
-<a href="http://boolan.com/lecture/1000001063">section 5</a> |
-<a href="http://boolan.com/lecture/1000001066">section 6</a></li>
+<li><a href="http://boolan.com/course/section/1000001031">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001053">section 2</a> |
+<a href="http://boolan.com/course/section/1000001054">section 3</a> |
+<a href="http://boolan.com/course/section/1000001062">section 4</a> |
+<a href="http://boolan.com/course/section/1000001063">section 5</a> |
+<a href="http://boolan.com/course/section/1000001066">section 6</a></li>
 </ul>
 <h3>2. Round-trip</h3>
 <ul>
 <li>How NTP works</li>
 <li>Measure clock error between two hosts</li>
 <li>The only UDP example</li>
+<li><a href="http://boolan.com/course/section/1000001071">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001102">section 2</a> |
+<a href="http://boolan.com/course/section/1000001103">section 3</a> |
+<a href="http://boolan.com/course/section/1000001104">section 4</a> |
+<a href="http://boolan.com/course/section/1000001105">section 5</a> |
+<a href="http://boolan.com/course/section/1000001106">section 6</a> |
+<a href="http://boolan.com/course/section/1000001107">section 7</a> |</li>
 </ul>
 <h3>3. Netcat</h3>
 <ul>
 <li>The Swiss army knife of networking</li>
 <li>Deal with two file descriptors simultaneously (stdin/out and TCP socket)</li>
 <li>Why IO-multiplexing must be used with non-blocking IO</li>
-</ul>
-<h3>4. Slow sink/source</h3>
-<ul>
-<li>Simulate low-bandwidth or slow peer</li>
-<li>Generate traffic at given speed</li>
-<li>Throttling</li>
-</ul>
-<h3>5. procmon</h3>
-<ul>
-<li>cpu / memory usage charts of one process</li>
+<li><a href="http://boolan.com/course/section/1000001118">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001119">section 2</a> |
+<a href="http://boolan.com/course/section/1000001120">section 3</a> |
+<a href="http://boolan.com/course/section/1000001121">section 4</a> |
+<a href="http://boolan.com/course/section/1000001122">section 5</a> |
+<a href="http://boolan.com/course/section/1000001123">section 6</a> |
+<a href="http://boolan.com/course/section/1000001124">section 7</a> |</li>
 </ul>
 <h2>Part II: Concurrent programs with non-blocking IO</h2>
-<h3>10. Sudoku Solver</h3>
+<h3>4. procmon</h3>
+<ul>
+<li>cpu / memory usage charts of one process</li>
+<li><a href="http://boolan.com/course/section/1000001146">Lecture section 1</a> |
+<a href="http://boolan.com/course/section/1000001147">section 2</a> |
+<a href="http://boolan.com/course/section/1000001148">section 3</a> |
+<a href="http://boolan.com/course/section/1000001149">section 4</a> |
+<a href="http://boolan.com/course/section/1000001150">section 5</a> |
+<a href="http://boolan.com/course/section/1000001151">section 6</a></li>
+</ul>
+<h3>5. Simple memcached</h3>
+<ul>
+<li>Clients share the same state of the server</li>
+<li>Efficient locking by sharding</li>
+</ul>
+<h3>6. Sudoku Solver</h3>
 <ul>
 <li>Request-response model</li>
 <li>Client connections are independent</li>
@@ -94,11 +113,6 @@
 <li>Relay two TCP connections</li>
 <li>Mismatching bandwidth?</li>
 <li>Difference between level 4 and level 7?</li>
-</ul>
-<h3>12. Simple memcached</h3>
-<ul>
-<li>Clients share the same state of the server</li>
-<li>Efficient locking by sharding</li>
 </ul>
 <h3>13. Broadcasting to TCP peers</h3>
 <ul>
