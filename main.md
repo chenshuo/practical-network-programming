@@ -79,24 +79,16 @@
 * Client connections are independent
 * Concurrency and parallel on multicore machines
 
+### 7. Broadcasting to TCP peers
+* Connections exchange data with each other
+* How to deal with slow clients?
 
-### 11. SOCKS proxy server
+### 8. SOCKS proxy server
 * Relay two TCP connections
 * Mismatching bandwidth?
 * Difference between level 4 and level 7?
 
-### 13. Broadcasting to TCP peers
-* Connections exchange data with each other
-* How to deal with slow clients?
-
-### 14. RPC load balancer
-* Better than round-robin
-
 ## Part III: Data processing with multiple machines
-### 20. Parallel N-queen
-### 21. Median across machines
-### 22. Most frequent queries
-### 23. Distributed sorting
-
-## Part IV: Capacity provisioning, latency managing, etc.
-
+### 9. Parallel N-queen
+### 10. Median across machines
+### 11. Most frequent queries
